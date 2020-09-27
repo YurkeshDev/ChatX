@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".StartActivity">
+
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Register "
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="800"
+        app:sub_btn_line_color="@color/colorAccent"
+        app:sub_btn_ripple_color="@color/colorAccent"
+        app:sub_btn_tick_color="@color/white" />
+
+
+    <ImageView
+        android:id="@+id/chat_x"
+        android:layout_width="300dp"
+        android:layout_height="228dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chatx"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182"
+        tools:ignore="MissingConstraints" />
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:text="Login    "
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="800"
+        app:sub_btn_line_color="@color/colorAccent"
+        app:sub_btn_ripple_color="@color/colorAccent"
+        app:sub_btn_tick_color="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

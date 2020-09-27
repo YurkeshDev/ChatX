@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color4"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Email"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Password"/>
+
+
+
+        <com.spark.submitbutton.SubmitButton
+            android:id="@+id/btn_activity_login"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="Login   "
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.774"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="800"
+            app:sub_btn_line_color="@color/colorAccent"
+            app:sub_btn_ripple_color="@color/colorAccent"
+            app:sub_btn_tick_color="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:id="@+id/forgot_password"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Forgot your password?"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
